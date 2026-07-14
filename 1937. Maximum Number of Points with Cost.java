@@ -16,7 +16,7 @@ class Solution {
         for(int i =1 ; i< points.length ; i++)
         {
             dpLeft[0] = dp[0];
-            dpRight[0] = dp[points[0].length -1];
+            dpRight[points[0].length-1] = dp[points[0].length -1];
 
             for(int j = 1 ; j < points[0].length ; j++)
             {
